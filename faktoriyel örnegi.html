@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = UTF-8> 
+    </head>
+    <body>
+    <table border = 1>
+        <tr><td>Sayı</td><td>Faktoriyeli</td></tr>
+       <script>
+           function fact(a){
+               var carpim = 1;
+               for(i= 1;i<=a;i++)
+               carpim = carpim * i;
+              return carpim; 
+           }
+        function fact2(a){
+            if(a==0)
+                return 1;
+               return a*fact2(a-1); 
+        }
+        for(i=1;i<15;i++){
+            document.write("<tr><td>"+i+"</td><td>"+fact2(i)+"</td></tr>");
+        }
+       </script> 
+       </table>
+
+    </body>
+</html>
